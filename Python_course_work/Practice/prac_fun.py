@@ -40,8 +40,8 @@ print(mul(a,b,c))
 '''
 def interest(p,t,r):
     return (p*t*r)/100
-a,b,c=list(map(int,input().split()))
-print(interest(a,b,c))
+p,t,r=list(map(int,input().split()))
+print(interest(p,t,r))
 '''
 
 '''
@@ -73,6 +73,6 @@ def removei(l,val):
     while val in l:
         l.remove(val)
     return l
-l = set(map(int,input().split())) 
+l = list(map(int,input().split())) 
 val = int(input())
 print(removei(l,val))

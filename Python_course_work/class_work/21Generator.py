@@ -13,3 +13,12 @@ print(next(load))
 '''
 
 
+def feed(l):
+    for i in l:
+        yield i
+
+l = list(map(int,input().split()))
+load = feed(l)
+n = int(input())
+for j in range(n):
+    print(next(load))
